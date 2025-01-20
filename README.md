@@ -26,5 +26,5 @@ Navigate to the project directory and run the game script:
 python flappy_bird.py
 
 🎮 Controls
-Spacebar: Make the bird flap and move upward.
+left click: Make the bird flap and move upward.
 Avoid the pipes and try not to hit the ground!
