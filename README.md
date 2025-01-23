@@ -23,7 +23,7 @@ Clone or download the game code from this repository.
 
 Run the Game
 Navigate to the project directory and run the game script:
-python flappy_bird.py
+python flappybird.py
 
 🎮 Controls
 left click: Make the bird flap and move upward.

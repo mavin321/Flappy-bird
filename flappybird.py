@@ -31,9 +31,9 @@ pass_pipe=False
 
 
 #loading background images
-bg=pygame.image.load('background.png')
-ground_image=pygame.image.load('ground.png')
-button_img=pygame.image.load('restart.png')
+bg=pygame.image.load('images/background.png')
+ground_image=pygame.image.load('images/ground.png')
+button_img=pygame.image.load('images/restart.png')
 
 
 #function to reset everything to restart the game
@@ -62,7 +62,7 @@ class Bird(pygame.sprite.Sprite):
         self.index=0
         self.counter=0
         for num in range(1,4):
-            img=pygame.image.load(f'bird{num}.png')
+            img=pygame.image.load(f'images/bird{num}.png')
             self.images.append(img)
 
         self.image=self.images[self.index]
@@ -114,7 +114,7 @@ class Bird(pygame.sprite.Sprite):
 class Pipe(pygame.sprite.Sprite):
     def __init__(self, x,y, position):
         pygame.sprite.Sprite.__init__(self)
-        self.image= pygame.image.load('pipe.png')
+        self.image= pygame.image.load('images/pipe.png')
         self.rect = self.image.get_rect()
         #position 1 is for the top and -1 is for the bottom
         if position ==1:
