@@ -165,6 +165,10 @@ bird_group.add(flappy)
 #create restart button instance
 button=Button(screen_width//2 - 50, screen_height//2 -100, button_img)
 
+ #loading background music
+pygame.mixer.music.load('music/background_music.mp3')
+pygame.mixer.music.play(-1)
+
 
 #creating game loop
 run=True
@@ -207,7 +211,6 @@ while run:
         flying=False
 
     if game_over==False and flying== True:
-        
         #generate new pipes
         time_now=pygame.time.get_ticks()
         if time_now - last_pipe > pipe_frequency:
